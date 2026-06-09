@@ -23,7 +23,6 @@ The firmware handles:
 - PWM output generation for four ESCs
 - LED and buzzer feedback for setup and calibration states
 
-This was mainly an educational and experimental project, focused on understanding what happens inside a basic flight controller rather than producing a polished consumer drone.
 
 ---
 
@@ -176,7 +175,6 @@ Buzzer    -> PTE23
 ## Current status
 
 The firmware is complete as an educational implementation, but the drone should not be considered ready for real flight.
-
 The main missing work is tuning and validation:
 
 - PID tuning
@@ -186,18 +184,4 @@ The main missing work is tuning and validation:
 - safer motor arming logic
 - empirical testing under controlled conditions
 
-In short: the code exists, the math exists, the hardware exists. Stability is still only slightly implied.
 
----
-
-## Safety note
-
-This is not a plug-and-play flight controller.
-
-Running untuned motor-control firmware on a real quadcopter can be dangerous. Any test should be performed with propellers removed first, then with proper restraints, and only later in a controlled open area.
-
----
-
-## License
-
-The original source comment marks the project as **freeware**.
