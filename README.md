@@ -4,7 +4,7 @@
 
 The project was supervised by **Prof. S. Carrato** and developed using components and laboratory tools provided by the University of Trieste.
 
-The name is intentionally honest: the code is structured and complete enough to run, but the aircraft is not meant to be considered flight-ready without proper tuning, testing and safety validation.
+The code is structured and complete enough to run, but the aircraft is not meant to be considered flight-ready without proper tuning, testing and safety validation.
 
 ---
 
@@ -59,12 +59,6 @@ MPU9150.h
 Calibration.h
 Lights.h
 FIFO_register.h
-```
-
-The control loop is configured at:
-
-```cpp
-#define FREQ 50.000000 // Hz
 ```
 
 The measured cycle time is approximately **12 ms**, which means that the loop could theoretically be raised up to around **80 Hz**. The code notes that most of the delay comes from magnetometer reading in FUSE mode. Reading the magnetometer directly through the auxiliary I2C interface could reduce the cycle time and allow higher control-loop frequencies.
